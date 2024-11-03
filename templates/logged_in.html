@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Youv'e logged in {% endblock %} {%
+block content %}
+
+<style>
+  div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+  h1 {
+    color: Black;
+  }
+</style>
+<!-- <div class="card text-black text-center p-3"> -->
+<div class="card bg-primary text-white text-center p-3">
+  <h2>
+    Hello You have Logged in as
+    <h1>{{ email }}</h1>
+    and you name is
+    <h1>{{ name }}</h1>
+  </h2>
+</div>
+<!-- </div> -->
+
+{% endblock %}

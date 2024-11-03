@@ -1,0 +1,142 @@
+{% extends "base.html" %} {% block title %}Login System{% endblock %} {% block
+content %} {% if message %}
+
+<style>
+  div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+
+  button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 250px;
+    margin-left: 250px;
+  }
+</style>
+<div class="alert alert-secondary" role="alert">
+  <p>{{ message }}</p>
+</div>
+{% endif %}
+
+<form action="" method="post">
+  <div class="form-group">
+    <label for="InputEmail">Email address</label>
+    <input
+      name="email"
+      class="form-control"
+      id="InputEmail"
+      placeholder="Enter email"
+    />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="InputPassword">Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      id="InputPassword"
+      placeholder="Password"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- 
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button
+          class="btn btn-link"
+          data-toggle="collapse"
+          data-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div
+      id="collapseOne"
+      class="collapse show"
+      aria-labelledby="headingOne"
+      data-parent="#accordion"
+    >
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+        terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+        skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+        helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+        beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+        haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="card"> -->
+<!-- <div>
+    <p> -->
+<!-- <a
+    class="btn"
+    data-toggle="collapse"
+    href="#multiCollapseExample1"
+    role="button"
+    aria-expanded="false"
+    aria-controls="multiCollapseExample1"
+    >Forgot Password!</a
+  > -->
+<!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button> -->
+<!-- </p>
+  </div> -->
+
+<!-- <div class="collapse multi-collapse" id="multiCollapseExample1">
+   
+    <form method="post">
+      <label for="InputEmail">Email address</label>
+      <input
+        name="forgot_pass_email"
+        class="form-control"
+        id="InputEmail"
+        placeholder="Enter email"
+      />
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div> -->
+<!-- <style>
+    div {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 250px;
+      margin-left: 250px;
+    }
+    h1 {
+      color: Black;
+    }
+  </style> -->
+<!-- <div class="card text-black text-center p-3"> -->
+<!-- <div class="card bg-primary text-white text-center p-3">
+    <h2>
+      Your Email is
+      <h1>{{ user_forgotpass_email }}</h1>
+      , your name is
+      <h1>{{ user_forgotpass_name }}</h1>
+      ,and your password is
+      <h1>{{ user_forgotpass }}</h1>
+    </h2>
+  </div> -->
+<!-- </div> -->
+<!-- </div> -->
+{% endblock %}
